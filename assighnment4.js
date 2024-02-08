@@ -1,4 +1,4 @@
-// problem 1
+
 function caculateMoney(customer){
     if(typeof customer !== 'number'){
         return 'please enter integer number'
@@ -33,7 +33,7 @@ function checkName(String) {
         }
     }
 }
-// console.log(checkName(123))
+
 function deleteInvalids(array){
     if(!Array.isArray(array)){
         return 'Invalid Array'
@@ -48,20 +48,29 @@ function deleteInvalids(array){
     return newArray;
     
 }
-// 
-function password(input){
+
+
+function password(inputs){
 
   let password = '';
+  for(const input in inputs){
+    const thispassword = input[siteName] + input[name] + input[birthYear];
+    console.log(thispassword)
+    password = password + thispassword
+    console.log(password)
+  }
  
   
-password = input.siteName+ "#"
+
     }
 
 
-// const input ={ name: "kolimuddin" , birthYear: 1999 , siteName: "google" }
-// const object = password(input)
-// console.log(object)
-// -----------
+const input ={ name: "kolimuddin" , birthYear: 1999 , siteName: "google" }
+const object = password(input)
+console.log(object)
+
+
+
 function monthlySavings( incomes, Cost){
     if(!Array.isArray(incomes) && typeof livingCost !== 'number' ){
         return 'Invalid Array'
@@ -87,7 +96,7 @@ function monthlySavings( incomes, Cost){
     }
 
 }
-console.log(monthlySavings(100, [ 900 , 2700 , 3400]))
+// console.log(monthlySavings(100, [ 900 , 2700 , 3400]))
     
     
 
