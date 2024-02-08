@@ -52,22 +52,21 @@ function deleteInvalids(array){
 
 function password(inputs){
 
-  let password = '';
-  for(const input in inputs){
-    const thispassword = input[siteName] + input[name] + input[birthYear];
-    console.log(thispassword)
-    password = password + thispassword
+ 
+  
+    const password = input.siteName.toUpperCase() +'#' +inputs.name + '@'+inputs.birthYear;
     console.log(password)
+   
   }
  
   
 
-    }
+    
 
 
 const input ={ name: "kolimuddin" , birthYear: 1999 , siteName: "google" }
 const object = password(input)
-console.log(object)
+// console.log(object)
 
 
 
